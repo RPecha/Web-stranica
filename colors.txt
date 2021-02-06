@@ -1,0 +1,7 @@
+bleanched almond - #ffebcd
+color accent - #cccccc
+color background dark - #3f3a49
+color background light - #6f667f
+
+
+dropdown background color - #3d3947 

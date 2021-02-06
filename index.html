@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartmani-Vodice-Srima</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="js/splide-2.4.21/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/style_arrows.css">
+    <link rel='stylesheet' href='js/fullCalendar/lib/main.css'  />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/splide-2.4.21/dist/js/splide.min.js"></script>
+    <script type="module" src="js/mainFunctions.js"></script>
+    <script src="js/jquery.js"></script>    
+    <script src='js/fullCalendar/lib/main.js'></script>
+</head>
+<body>
+    <header id="navbar" class="slideIn">
+        <a href="#home">Apartmani-Vodice-Srima</a>
+        <div class="dropdown">
+            <button class="dropbtn">Izbornik</button>
+            <div class="dropdown-content">
+                <a href="#town">Srima</a>
+                <a href="#accomodation">Smještaj</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+        <nav class="navigation">
+            <a href="#town">Srima</a>
+            <a href="#accomodation">Smještaj</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+    <summary id="home" class=".anchor">
+        <img src="img/background_summary.jpg">
+        <p class="slideIn">
+            Srima, malo mjesto smješteno 2,5km od Vodica i 10 km od grada Šibenika. 
+            Lijepim plažama, kvalitetnim i povoljnim ugostiteljskim ponudama, 
+            blizinom Vodičke rivijere, te Šibenskog arhipelaga i nacionalnih parkova 
+            Krka i Kornati, već godinama mami mnogobrojne turiste. 
+            Turistički sadržaji nadaleko poznatih Vodica i opuštajuća atmosfera 
+            malog mirnog mjesta, zadovoljit će sve potrebe za idealnim godišnjim 
+            odmorom na moru.
+        </p>
+    </summary>
+    <main>
+        <div class='town fadeIn'>
+            <div class='anchor'>
+                <h1  id="town">Srima</h1>
+            </div>
+            <div id="main-splide" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img1.jpg"></li>
+                        <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img2.jpg"></li>
+                        <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img3.jpg"></li>
+                        <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img4.jpg"></li>
+                        <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img5.jpg"></li>
+                        <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img6.jpg"></li>
+                        <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img7.jpg"></li>
+                        <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img8.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="anchor">
+            <h1 id="accomodation">Smještaj</h1>
+        </div>
+        <section class="accomodation">
+            <div class="accomodation-div-class">
+                <div class="content-accomodation fadeIn">
+                    <img src="img/A_apartman.jpg">
+                    <div>
+                        <p>Apartman Jug</p>
+                        <button class="details-button">
+                            <div>
+                                <span>DETALJI</span>
+                                <br>
+                                <i class="icono-arrow1-down"></i>
+                            </div>
+                            <div style="display: none;">
+                                <span>DETALJI</span>
+                                <br>
+                                <i class="icono-arrow1-up"></i>
+                            </div>
+                        </button>
+                    </div> 
+                </div> 
+                <div class="details">
+                    <div class="splide details-splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_a/img1.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_a/img2.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_a/img3.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_a/img4.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_a/img5.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_a/img6.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_a/img7.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_a/img8.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='details-calendar'></div>
+                    <div class='calendar-legend'>
+                        <p>Slobodno</p>
+                        <p>Zauzeto</p>
+                    </div>
+                    <!--<img src="img/hrv_2+1.png">-->
+                    <table class="pricing">
+                        <tr >
+                            <th colspan="4">CIJENE NOĆENJA - (do maksimalnog broja osoba 3)</th>
+                        </tr>
+                        <tr>
+                            <td>01.06. - 30.06.</td>
+                            <td>01.07. - 15.07.</td>
+                            <td>16.07. - 20.8.</td>
+                            <td>21.08. - 30.09.</td>
+                        </tr>
+                        <tr>
+                            <td>30 EUR</td>
+                            <td>38 EUR</td>
+                            <td>45 EUR</td>
+                            <td>30 EUR</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4">NAPOMENA: U cijenu nije uračunata boravišna taksa</th>
+                        </tr>
+                    </table>
+                </div>    
+            </div>
+
+            <div class="accomodation-div-class">
+                <div class="content-accomodation fadeIn">
+                    <img src="img/B_apartman.jpg">
+                    <div>
+                        <p>Apartman Sjever</p>
+                        <button class="details-button">
+                            <div>
+                                <span>DETALJI</span>
+                                <br>
+                                <i class="icono-arrow1-down"></i>
+                            </div>
+                            <div style="display: none;">
+                                <span>DETALJI</span>
+                                <br>
+                                <i class="icono-arrow1-up"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="splide details-splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_b/img1.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_b/img2.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_b/img3.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_b/img4.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_b/img5.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_b/img6.jpg"></li>
+                                <li class="splide__slide"><img data-splide-lazy="img/accomodation/apartman_b/img7.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='details-calendar'></div>
+                    <div class='calendar-legend'>
+                        <p>Slobodno</p>
+                        <p>Zauzeto</p>
+                    </div>
+                    <!--<img src="img/hrv_2+1.png">-->
+                    <table class="pricing">
+                        <tr >
+                            <th colspan="4">CIJENE NOĆENJA - (do maksimalnog broja osoba 3)</th>
+                        </tr>
+                        <tr>
+                            <td>01.06. - 30.06.</td>
+                            <td>01.07. - 15.07.</td>
+                            <td>16.07. - 20.8.</td>
+                            <td>21.08. - 30.09.</td>
+                        </tr>
+                        <tr>
+                            <td>28 EUR</td>
+                            <td>35 EUR</td>
+                            <td>40 EUR</td>
+                            <td>28 EUR</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4">NAPOMENA: U cijenu nije uračunata boravišna taksa</th>
+                        </tr>
+                </table>
+                </div>
+            </div>
+        </section> 
+    </main>
+    <footer class='.anchor' id="contact">
+        <h1>Mail</h1>
+        <p>mariopecha40@gmail.com </p>
+        <p>riomabiker3@gmail.com</p>
+        <hr>
+        <h1>GSM (HR)</h1>
+        <p>098/1967 - 199</p>
+        <p>091/5463 - 857</p>
+        <hr>
+        <h1>Adresa</h1>
+        <p>Srima VIII/8, 22211 Vodice</p>
+    </footer>
+</body>
+</html>
