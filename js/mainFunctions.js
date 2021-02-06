@@ -29,8 +29,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 //----------------------FULL CALENDAR-------------------------
 
-//import allLocales from '@fullCalendar/lib/locales-all';
-
     var calendars = document.getElementsByClassName('details-calendar');
     
     var todayDate = new Date();

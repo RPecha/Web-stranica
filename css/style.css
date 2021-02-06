@@ -523,27 +523,27 @@ footer > h1{
 @media (min-width: 481px) and (max-width: 767px) {
 
     .navigation{
-    display: none;
+        display: none;
     }
 
     .accomodation{
-    justify-content: center;
+        justify-content: center;
     }
 
     .navigation{
-    display: none;
+        display: none;
     }
 
     header > a {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
     }
 
     header > button {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
     }
 
     summary > p {
-    font-size: 0.6rem;
+        font-size: 0.6rem;
     }
 }
 
@@ -619,52 +619,52 @@ footer > h1{
     }
 
     .navigation{
-    display: none;
+        display: none;
     }
 
     .splide {
-    width: 300px;
+        width: 300px;
     }
 
     .accomodation{
-    padding: 0;
+        padding: 0;
     }
 
     .accomodation-div-class{
-    align-items: center;
+        align-items: center;
     }
 
     .accomodation-div-class:nth-child(2){
-    margin-top: 10%;
+        margin-top: 10%;
     }
 
     .details-button{
-    font-size: 0.7rem;
-    height: 30%;
+        font-size: 0.7rem;
+        height: 30%;
     }
 
     .details-button:hover{
-    height: 35%;
+        height: 35%;
     }
 
     .content-accomodation{
-    min-width: 0;
-    margin-left: 0;
+        min-width: 0;
+        margin-left: 0;
     }
 
     .content-accomodation > div{ 
-    height: 40px; 
+        height: 40px; 
     }
 
     .content-accomodation > div > p{ 
-    font-size: 2px;
+        font-size: 2px;
     }
 
     .splide{
-    min-width: 0;
+        min-width: 0;
     }
 
     .dropdown-content {
-    min-width: 35px;
+        min-width: 35px;
     }
 }
