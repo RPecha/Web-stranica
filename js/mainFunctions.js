@@ -6,7 +6,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '#main-splide', {
         type: 'fade',
         cover: true,
-        heightRatio: 0.6,
+        height: '90vh',
         width: '100%',
         lazyLoad: 'sequential',
         rewind: true,

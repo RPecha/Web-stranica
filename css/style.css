@@ -115,7 +115,7 @@ summary > p {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 
 .splide {
