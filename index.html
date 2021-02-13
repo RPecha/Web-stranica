@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,18 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="js/splide-2.4.21/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/style_arrows.css">
-    <link rel='stylesheet' href='js/fullCalendar/lib/main.css'  />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel='stylesheet' href='js/fullCalendar/lib/main.css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/splide-2.4.21/dist/js/splide.min.js"></script>
-    <script type="module" src="js/mainFunctions.js"></script>
-    <script src="js/jquery.js"></script>    
+    <script src="js/mainFunctions.js"></script>
+    <script src="js/jquery.js"></script>
     <script src='js/fullCalendar/lib/main.js'></script>
+    <script src="js/jquery.visible.js"></script>
 </head>
+
 <body>
-    <header id="navbar" class="slideIn">
+    <header id="navbar" class=" slideTop">
         <a href="#home">Apartmani-Vodice-Srima</a>
         <div class="dropdown">
             <button class="dropbtn">Izbornik</button>
@@ -31,24 +35,19 @@
             <a href="#contact">Kontakt</a>
         </nav>
     </header>
-    <summary id="home" class=".anchor">
+    <summary id="home" class="slideTop">
         <img src="img/background_summary.jpg">
-        <p class="slideIn">
-            Srima, malo mjesto smješteno 2,5km od Vodica i 10 km od grada Šibenika. 
-            Lijepim plažama, kvalitetnim i povoljnim ugostiteljskim ponudama, 
-            blizinom Vodičke rivijere, te Šibenskog arhipelaga i nacionalnih parkova 
-            Krka i Kornati, već godinama mami mnogobrojne turiste. 
-            Turistički sadržaji nadaleko poznatih Vodica i opuštajuća atmosfera 
-            malog mirnog mjesta, zadovoljit će sve potrebe za idealnim godišnjim 
-            odmorom na moru.
+        <p class="slideTop">
+            Srima, malo mjesto smješteno 2,5km od Vodica i 10 km od grada Šibenika. Lijepim plažama, kvalitetnim i povoljnim ugostiteljskim ponudama, blizinom Vodičke rivijere, te Šibenskog arhipelaga i nacionalnih parkova Krka i Kornati, već godinama mami mnogobrojne
+            turiste. Turistički sadržaji nadaleko poznatih Vodica i opuštajuća atmosfera malog mirnog mjesta, zadovoljit će sve potrebe za idealnim godišnjim odmorom na moru.
         </p>
     </summary>
     <main>
-        <div class='town fadeIn'>
+        <div class='town'>
             <div class='anchor'>
-                <h1  id="town">Srima</h1>
+                <h1 id="town" class="slideLeft">Srima</h1>
             </div>
-            <div id="main-splide" class="splide">
+            <div id="main-splide" class="splide slideLeft">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide"><img data-splide-lazy="img/beaches_gallery/img1.jpg"></li>
@@ -63,12 +62,12 @@
                 </div>
             </div>
         </div>
-        <div class="anchor">
+        <div class="anchor slideLeft">
             <h1 id="accomodation">Smještaj</h1>
         </div>
         <section class="accomodation">
             <div class="accomodation-div-class">
-                <div class="content-accomodation fadeIn">
+                <div class="content-accomodation slideLeft">
                     <img src="img/A_apartman.jpg">
                     <div>
                         <p>Apartman Jug</p>
@@ -84,9 +83,9 @@
                                 <i class="icono-arrow1-up"></i>
                             </div>
                         </button>
-                    </div> 
-                </div> 
-                <div class="details">
+                    </div>
+                </div>
+                <div class="details slideLeft">
                     <div class="splide details-splide">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -107,7 +106,7 @@
                         <p>Zauzeto</p>
                     </div>
                     <table class="pricing">
-                        <tr >
+                        <tr>
                             <th colspan="4">CIJENE NOĆENJA - (do maksimalnog broja osoba 3)</th>
                         </tr>
                         <tr>
@@ -126,11 +125,11 @@
                             <th colspan="4">NAPOMENA: U cijenu nije uračunata boravišna taksa</th>
                         </tr>
                     </table>
-                </div>    
+                </div>
             </div>
 
             <div class="accomodation-div-class">
-                <div class="content-accomodation fadeIn">
+                <div class="content-accomodation slideLeft">
                     <img src="img/B_apartman.jpg">
                     <div>
                         <p>Apartman Sjever</p>
@@ -148,7 +147,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="details">
+                <div class="details slideLeft">
                     <div class="splide details-splide">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -168,7 +167,7 @@
                         <p>Zauzeto</p>
                     </div>
                     <table class="pricing">
-                        <tr >
+                        <tr>
                             <th colspan="4">CIJENE NOĆENJA - (do maksimalnog broja osoba 3)</th>
                         </tr>
                         <tr>
@@ -186,12 +185,12 @@
                         <tr>
                             <th colspan="4">NAPOMENA: U cijenu nije uračunata boravišna taksa</th>
                         </tr>
-                </table>
+                    </table>
                 </div>
             </div>
-        </section> 
+        </section>
     </main>
-    <footer class='.anchor' id="contact">
+    <footer id="contact">
         <h1>Mail</h1>
         <p>mariopecha40@gmail.com </p>
         <p>riomabiker3@gmail.com</p>
@@ -204,4 +203,5 @@
         <p>Srima VIII/8, 22211 Vodice</p>
     </footer>
 </body>
+
 </html>

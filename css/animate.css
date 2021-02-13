@@ -1,0 +1,27 @@
+/* css for visible jQuery plugin */
+
+.come-top {
+    transform: translateY(-150px);
+    animation: come-top 2s ease forwards;
+}
+
+.come-top:first-child {
+    animation-duration: 1.2s;
+}
+
+@keyframes come-top {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.come-left {
+    transform: translateX(-150px);
+    animation: come-left 2s ease forwards;
+}
+
+@keyframes come-left {
+    to {
+        transform: translateX(0);
+    }
+}
