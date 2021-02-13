@@ -30,10 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
     //----------------------FULL CALENDAR-------------------------
 
     var calendars = document.getElementsByClassName('details-calendar');
+    var goggleCalendarIds = [
+        "3fd17ppbjsbih76o9tief3kg9o@group.calendar.google.com",
+        "pk8jmcpce3cofvcsling4jorv4@group.calendar.google.com"
+    ];
 
     var todayDate = new Date();
     var yearToDisplay = todayDate.getFullYear();
-
     //get current year and check if date is 
     //before october and adjust displayed year
     if (todayDate.getMonth() < 11)
@@ -44,10 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //intialization of all detail calendars
     for (var i = 0, len = calendars.length; i < len; i++) {
-
-        var goggleCalendarIds = ["3fd17ppbjsbih76o9tief3kg9o@group.calendar.google.com",
-            "pk8jmcpce3cofvcsling4jorv4@group.calendar.google.com"
-        ];
 
         var calendar = new FullCalendar.Calendar(calendars[i], {
             initialView: 'dayGridMonth',
