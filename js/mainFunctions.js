@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //----------------------FULL CALENDAR-------------------------
 
     var calendars = document.getElementsByClassName('details-calendar');
-    var goggleCalendarIds = [
+    const goggleCalendarIds = [
         "3fd17ppbjsbih76o9tief3kg9o@group.calendar.google.com",
         "pk8jmcpce3cofvcsling4jorv4@group.calendar.google.com"
     ];
@@ -82,3 +82,14 @@ if ('scrollRestoration' in history) {
 }
 // This is needed if the user scrolls down during page load and you want to make sure the page is scrolled to the top once it's fully loaded. This has Cross-browser support.
 window.scrollTo(0, 0);
+
+// Event listener if window resizes then refresh splides
+window.addEventListener('resize', function(){
+
+    document.getElementById('main-splide').refresh();
+
+    var splides = document.getElementsByClassName('details-splide');
+    for(var i = 0, len = splides.length; i < len; i++){
+        splides[i].refresh();
+    }
+});
