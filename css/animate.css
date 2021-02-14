@@ -16,7 +16,7 @@
 }
 
 .come-left {
-    transform: translateX(-150px);
+    transform: translateX(-300px);
     animation: come-left 2s ease forwards;
 }
 
