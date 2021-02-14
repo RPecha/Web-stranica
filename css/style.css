@@ -12,7 +12,7 @@ body {
     font-size: 62.5%;
     font-family: 'Monteserrat', sans-serif;
     color: #e5e4e2;
-    background-color: #6f667f;
+    background: url('../img/background.jpg') repeat top;
 }
 
 .anchor>h1 {
@@ -86,9 +86,8 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-image: url('../img/grid.jpg');
-    background-color: #6f667f;
-    background-blend-mode: normal;
+    background: url('../img/section.png') repeat-y center center;
+    background-size: contain;
 }
 
 
@@ -98,7 +97,6 @@ summary {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 5%;
 }
 
 summary>img {
@@ -127,7 +125,6 @@ summary>p {
 
 .splide {
     background-color: #6f667f;
-    margin-bottom: 5%;
     width: 100%;
 }
 
@@ -266,6 +263,7 @@ summary>p {
 }
 
 .details-calendar {
+    margin-top: 2%;
     padding: 0 2% 0 2%;
 }
 
@@ -424,7 +422,9 @@ footer>h1 {
 @media (max-width: 1023px) {
     main {
         margin: 0%;
+        background: none;
     }
+
     .accomodation-div-class {
         width: 100%;
     }
