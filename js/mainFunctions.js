@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     new Splide('#main-splide', {
         type: 'fade',
         cover: true,
-        height: '90vh',
+        heightRatio: 0.45,
         width: '100%',
         lazyLoad: 'sequential',
         rewind: true,
@@ -82,14 +82,3 @@ if ('scrollRestoration' in history) {
 }
 // This is needed if the user scrolls down during page load and you want to make sure the page is scrolled to the top once it's fully loaded. This has Cross-browser support.
 window.scrollTo(0, 0);
-
-// Event listener if window resizes then refresh splides
-window.addEventListener('resize', function(){
-
-    document.getElementById('main-splide').refresh();
-
-    var splides = document.getElementsByClassName('details-splide');
-    for(var i = 0, len = splides.length; i < len; i++){
-        splides[i].refresh();
-    }
-});
