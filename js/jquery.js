@@ -8,13 +8,18 @@ $(function() {
         }
     });
 
-    $(window).on('scroll', function() {
-        $(".slideLeft").each(function() {
-            if ($(this).visible(true)) {
-                $(this).addClass('come-left');
-            }
+    if($(".slideLeft").visible(true)){
+        $(".slideLeft").addClass('come-left');
+    }
+    else {
+        $(window).on('scroll', function() {
+            $(".slideLeft").each(function() {
+                if ($(this).visible(true)) {
+                    $(this).addClass('come-left');
+                }
+            });
         });
-    });
+    }
 
     //------------------------DETAILS BUTTON CLICK-----------------------------
 
